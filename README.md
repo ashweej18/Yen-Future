@@ -16,7 +16,7 @@ To predict future movements of CAD/JPY using
 ## **Steps**
 
 * Time Series Analysis
-1. Load the historical CAD/JPY rates into Pandas Data frame
+1. Load the historical CAD/JPY rates into Pandas Data Frame
 2. Using Hodrick Prescott Filter, identify the trend and noise components. Compare the Price vs Trend 
 3. Check the data for Stationarity using Augmented Dickey Fuller Test. If not, transform the data 
 4. Plot Autocorrelation Function and Partial Autocorrelation Function to identify the order of model 
@@ -26,6 +26,12 @@ To predict future movements of CAD/JPY using
 
 
 * Linear Regression 
+1. Load the historical CAD/JPY rates into Pandas Data Frame
+2. Calculate Daily Returns and Lagged Daily Returns
+3. Split the data into Train and Test set.
+4. Apply Linear Regression Model from SKlearn library for Train period
+5. Based on the model, predict the returns for the test preiod
+6. Evaluate the in-sample and out-sample performance.
 
 
 ---
